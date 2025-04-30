@@ -1,4 +1,8 @@
+import test from './test';
+
 export const App = () => {
+  const temp = test.toString(); // дурацкая запись, чтобы не отображалась ошибка
+
   return (
     <div
       style={{
@@ -6,12 +10,14 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         paddingTop: '100px',
-        // alignItems: 'center',
+        // alignItems: 'cen  ter',
         fontSize: 15,
-        color: '#010101',
+        color: '#ffffff',
+        background: '#464646',
       }}
     >
-      <h1>Template project by K-Basket</h1>
+      <h1>Test JavaScript</h1>
+      <h2>{temp}</h2>
     </div>
   );
 };
